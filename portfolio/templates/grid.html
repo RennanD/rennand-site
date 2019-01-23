@@ -1,0 +1,10 @@
+{% for proj in project %}
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="{{proj.capa.url}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>{{ proj.titulo }}</b></p>
+        <p>{{proj.desc}}</p>
+        <p><a href="{{proj.link}}">Visitar</a></p>
+      </div>
+    </div>
+{% endfor %}
